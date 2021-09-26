@@ -22,4 +22,12 @@ public class DammyBotTest {
         String rsl = DammyBot.answer(question);
         Assert.assertEquals(expected, rsl);
     }
+
+    @Test
+    public void whenOtherThenDUY() {
+        String question = "Сколько будет 2+2?";
+        String expected = "Этот вопрос ставит меня в тупик.";
+        String rsl = DammyBot.answer(question);
+        Assert.assertEquals(expected, rsl);
+    }
 }
