@@ -18,7 +18,7 @@ public class LogicNot {
     }
 
     public static boolean notEvenAndPositive(int num) {
-        return (!isEven(num)  && isPositive(num));
+        return isNotEven(num)  && isPositive(num);
     }
 
     public static boolean isEvenOrNotPositive(int num) {
@@ -26,7 +26,7 @@ public class LogicNot {
     }
 
     public static void main(String[] args) {
-        int num = -2;
+        int num = -3;
         System.out.println(isEven(num));
         System.out.println(isPositive(num));
         System.out.println(isNotEven(num));
