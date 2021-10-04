@@ -5,10 +5,10 @@ public class SwitchWeek {
         String name;
         switch (day) {
             case 1:
-                name = "Mondey";
+                name = "Monday";
                 break;
             case 2:
-                name = "Tesday";
+                name = "Tuesday";
                 break;
             case 3:
                 name = "Wednesday";
