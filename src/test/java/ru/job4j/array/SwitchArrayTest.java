@@ -30,10 +30,10 @@ public class SwitchArrayTest {
     @Test
     public void whenNoSwap() {
         int[] input = new int[] {2, 3, 0, 5};
-        int source = 2;
-        int dest = 4;
+        int source = 1;
+        int dest = 2;
         int[] result = SwitchArray.swap(input, source, dest);
-        int[] expected = new int[] {2, 3, 0, 5};
+        int[] expected = new int[] {2, 0, 3, 5};
         Assert.assertArrayEquals(expected, result);
     }
 }
