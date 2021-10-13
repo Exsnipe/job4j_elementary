@@ -6,7 +6,7 @@ import org.junit.Test;
 public class EndsWithTest {
 
     @Test
-    public void whenTrue() {
+    public void whenTestTrue() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] post = {'l', 'o'};
         boolean isEndWith = EndsWith.endWith(word, post);
@@ -14,7 +14,7 @@ public class EndsWithTest {
     }
 
     @Test
-    public void whenFalse() {
+    public void whenTestFalse() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] post = {'l', 'a'};
         boolean isEndWith = EndsWith.endWith(word, post);
