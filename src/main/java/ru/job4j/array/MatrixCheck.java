@@ -32,12 +32,11 @@ public class MatrixCheck {
     }
 
     public static boolean isWin(char[][] matrix) {
-        boolean isWin = false;
         for (int i = 0; i < matrix.length; i++) {
             if (matrix[i][i] == 'X' && (monoHorizontal(matrix, i) || monoVertical(matrix, i))) {
                 return true;
             }
         }
-        return isWin;
+        return false;
     }
 }
