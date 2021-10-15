@@ -88,4 +88,43 @@ public class MatrixCheckTest {
         char[] rsl = MatrixCheck.extractDiagonal(array);
         Assert.assertArrayEquals(expected, rsl);
     }
+
+    @Test
+    public void whenTrue() {
+        char[][] inputMatrix =  {
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+        };
+        boolean rsl = MatrixCheck.isWin(inputMatrix);
+        Assert.assertTrue(rsl);
+    }
+
+    @Test
+    public void whenFalse() {
+        char[][] inputMatrix =  {
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', 'X', ' ', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+        };
+        boolean rsl = MatrixCheck.isWin(inputMatrix);
+        Assert.assertFalse(rsl);
+    }
+
+    @Test
+    public void whenTrueAgain() {
+        char[][] inputMatrix =  {
+                {' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', ' ', ' ', ' '},
+                {'X', 'X', 'X', 'X', 'X'},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+        };
+        boolean rsl = MatrixCheck.isWin(inputMatrix);
+        Assert.assertTrue(rsl);
+    }
 }
