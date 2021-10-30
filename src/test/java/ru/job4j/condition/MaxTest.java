@@ -40,4 +40,25 @@ public class MaxTest {
         int rsl = Max.max(left, right);
         Assert.assertEquals(expected, rsl);
     }
+
+    @Test
+    public void max3parametres() {
+        int one = 4;
+        int two = 34;
+        int three = 9;
+        int expected = 34;
+        int rsl = Max.max(one, two, three);
+        Assert.assertEquals(expected, rsl);
+    }
+
+    @Test
+    public void max4parametres() {
+        int one = 4;
+        int two = 34;
+        int three = 9;
+        int four = 67;
+        int expected = 67;
+        int rsl = Max.max(one, two, three, four);
+        Assert.assertEquals(expected, rsl);
+    }
 }
